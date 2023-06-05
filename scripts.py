@@ -10,7 +10,6 @@ def process_request(url, quality):
     
     # Get available video qualities
     available_qualities = [stream.resolution for stream in video_streams]
-    print(available_qualities)
     if quality not in available_qualities:
         error_handler(2)
         return
